@@ -226,7 +226,7 @@ body {
 /* Mặc định hiển thị icon hình tròn */
 .vmenu a {
     display: block;
-    background: url('/images/ball.png') no-repeat 10px center;
+    background: url('images/ball.png') no-repeat 10px center;
     background-size: 16px 16px;
     background-position: 5px center;
     border-bottom: 1px dotted orangered;
