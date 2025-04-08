@@ -1,0 +1,386 @@
+@font-face {
+    font-family: "Anan";
+    src: url("fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf") format("truetype");
+}
+@font-face {
+    font-family: "BelieveIt";
+    src: url("fonts/BelieveIt-DvLE.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'VHARIS';
+    src: url('fonts/VHARIS.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'VNcorsi';
+    src: url('fonts/VNCORSI.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'tuyen-duc';
+    src: url('fonts/vps-tuyen-duc-italic.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'VHAN';
+    src: url('fonts/VHAVAN.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'vpshanoi';
+    src: url('fonts/vps-ha-noi-medium-hoa-italic.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'vpshanoi-bold';
+    src: url('fonts/vps-ha-noi-medium-hoa-bold-italic.TTF') format('truetype');
+}		
+@font-face {
+    font-family: 'vpscanthoHoa';
+    src: url('fonts/vps-can-tho-hoa.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'Supercharge';
+    src: url('fonts/SuperchargeStraightCondensed-RpVWV.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Vogu';
+    src: url('fonts/VNVOGU.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'South';
+    src: url('fonts/VNSOUTHN.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'VHHELS';
+    src: url('fonts/VHHELS.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'VNFREE';
+    src: url('fonts/VNFREE.TTF') format('truetype');
+}
+@font-face {
+    font-family: "VNCORVI";
+    src: url('fonts/VHCORVI.TTF') format('truetype');
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    border: 10px solid gold;
+    background-color: white;
+}
+.container {
+    max-width: auto;
+    max-height: auto;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid gold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*HEADER*/
+.container header {
+    background-image: url('https://www.gddt.edu.vn/media/0/2023/05/banner-cao-dang-fpt-polytechnic.jpg');
+    background-size: 100% 100%; /* Ảnh nền co giãn theo kích thước */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%;}
+    50% { background-position: 100% 50%;}
+    100% { background-position: 0% 50%;}
+}
+.fpt-fpoly {
+    font-family: "Supercharge", sans-serif;
+    font-size: 68px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(90deg, #ff7e00, #fff, #ffcc00, #ffffff, #ff7e00);
+    background-size: 400% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 5s infinite linear;
+    text-shadow: 4px 4px 10px rgba(255, 126, 0, 0.7);
+    padding: 20px;
+    display: inline-block;
+}
+.subtext {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'South', sans-serif;
+    text-align: center;
+    color: #ffb700;
+    display: block;
+}
+
+.company-info {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: orangered;
+    padding: 10px;
+    border-bottom-right-radius: 30px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+}
+.top-right a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: 0.3s ease-in-out;
+}
+.top-right a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: orangered;
+}
+/*MENU NGANG*/
+.container nav {
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    padding: 12px;
+    font-size: 18px;
+    border-top: 2px solid gold;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+.container nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 20px;
+    transition: color 0.3s ease-in-out;
+}
+.container nav a:hover {
+    color:yellow;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+/* ĐIỀU CHỈNH RESPONSIVE */
+@media (max-width: 768px) {
+    .container header {
+        flex-direction: column;
+        text-align: center;
+        min-height: 250px;
+    }
+    .company-info {
+        font-size: 28px;
+    }
+    .container nav {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+/*MENU ĐỨNG*/
+.vmenu {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 10px;
+    list-style: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px gray;
+    width: 250px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    user-select: none;
+}
+
+#move-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: orangered;
+    color: white;
+    cursor: grab;
+    border-radius: 5px;
+}
+
+#move-btn:active {
+    background-color: darkred;
+    cursor: grabbing;
+}
+/*Định dạng mục menu*/
+.vmenu li {
+    margin: 5px 0;
+}
+/* Mặc định hiển thị icon hình tròn */
+.vmenu a {
+    display: block;
+    background: url('/images/ball.png') no-repeat 10px center;
+    background-size: 16px 16px;
+    background-position: 5px center;
+    border-bottom: 1px dotted orangered;
+    color: orangered;
+    font-variant: small-caps;
+    font-size: larger;
+    text-decoration: none;
+    padding: 8px 5px 8px 35px; /*Điều chỉnh khoảng cách giữa icon và chữ*/
+}
+/*khi hover,Hiển thị icon hình tròn sang dấu > và đổi màu nền*/
+.vmenu a:hover {
+    background: url('images/hover.png') no-repeat 10px center, orangered;
+    color: white;
+    font-weight: bold;
+    background-size: 16px 16px;
+    background-position: 5px center;
+
+}
+    
+/*bố cục nội dung TRANG*/
+.page {
+    display: flex;
+    min-height: 100vh; /* Ít nhất bằng chiều cao của màn hình */
+    flex-direction: column;
+}
+.container .page article {
+    flex: 3;
+    background-color: white;
+    padding: 10px;
+}
+.container .page aside {
+    flex: 0; /* Để tránh tràn dòng */
+    background-color: lightgray;
+    padding: 0px;
+}
+/*DANH SÁCH SẢN PHẨM*/
+.col-25 {
+    width: calc(25% - 10px); /* Đảm bảo 4 sản phẩm trên 1 dòng */
+    box-sizing: border-box;
+}
+.product {
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+    background: white;
+    transition: transform 0.2s ease-in-out;
+}
+.product .name {
+    font-weight: bold;
+    color: orangered;
+    font-variant: small-caps;
+}
+.product:hover {
+    transform: scale(1.05); /* Hiệu ứng zoom nhẹ khi hover */
+}
+.product img {
+    width: 100%;
+    height: auto; /* Để hình ảnh giữ nguyên tỉ lệ */
+    object-fit: contain; /* Hiển thị toàn bộ ảnh */
+    border-radius: 10px;
+}
+.product .price {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: orange;
+    font-weight: bold;
+}
+.product .icons {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+.product .icons img{
+    width: 20px; /* Cố định kích thước icon */
+    height: 20px;
+    cursor: pointer;
+    object-fit: contain; /* Giữ nguyên tỉ lệ ảnh */ 
+    transition: transform 0.2s ease-in-out; /* Hiệu ứng zoom nhẹ khi hover */   
+}
+.product .icons img:hover {
+    transform: scale(1.2); /* Tăng kích thước icon khi hover */
+}
+.product .new-icon {
+    position: absolute;
+    width: 40px; /* Tăng kích thước */
+    right: 20px;
+    top: 40px;
+    object-fit: contain; /* Giữ nguyên tỉ lệ ảnh */
+    transition: transform 0.1s ease-in-out; /* Hiệu ứng zoom nhẹ khi hover */   
+    cursor: pointer; /* Con trỏ chuột khi hover */
+}
+.product .new-icon2 {
+    position: absolute;
+    width: 70px; /* Tăng kích thước */
+    left: 150px;
+    top: 90px;
+    object-fit: contain; /* Giữ nguyên tỉ lệ ảnh */
+    transition: transform 0.1s ease-in-out; /* Hiệu ứng zoom nhẹ khi hover */   
+    cursor: pointer; /* Con trỏ chuột khi hover */
+}
+.product .new-icon3 {
+    position: absolute;
+    width: 50px; /* Tăng kích thước */
+    left: 20px;
+    top: 110px;
+    object-fit: contain; /* Giữ nguyên tỉ lệ ảnh */
+    transition: transform 0.1s ease-in-out; /* Hiệu ứng zoom nhẹ khi hover */   
+    cursor: pointer; /* Con trỏ chuột khi hover */
+}
+.product .new-icon:hover, .new-icon2:hover, .new-icon3:hover {
+    transform: scale(1.2); /* Tăng kích thước icon khi hover */
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Giữ sản phẩm sát nhau hơn */
+    gap: 10px; /* Giảm khoảng cách */
+    margin-top: 50px; /* Điều chỉnh khoảng cách */
+}
+.col-25 {
+    width: calc(25% - 10px); /* 4 sản phẩm trên 1 dòng */
+    box-sizing: border-box;
+}
+/*Định dạng danh sách trong aside*/
+.container .page aside ul {
+    list-style: none;
+    padding: 0;
+}
+.container .page aside ul li {
+    margin: 5px 0;
+}
+.container .page aside ul li a {
+    text-decoration: none;
+    color: orangered;
+    font-weight: bold;
+}
+.container .page aside ul li a:hover {
+    color:  white;
+}
+/*Footer*/
+.container footer {
+    border-top: 5px double orangered;
+    line-height: 50px;
+    background-color: lightcyan;
+    text-align: center;
+    font-variant: small-caps;
+    clear: both;
+}
